@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <link rel="icon" type="image/x-icon" href="logo pesq com fundo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Eczar&family=Lora:wght@500&family=Martel:wght@300;400;600;700&family=Nunito+Sans:opsz,wght@6..12,300&family=Patua+One&family=Prata&family=REM:ital,wght@1,200&family=Raleway:wght@600&family=Stoke&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arimo&family=Cabin&family=DM+Sans:opsz@9..40&family=Eczar&family=Lora:wght@500&family=Martel:wght@300;400;600;700&family=Nunito+Sans:opsz,wght@6..12,300&family=Patua+One&family=Prata&family=REM:ital,wght@1,200&family=Raleway:wght@600&family=Stoke&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@300&family=Lexend+Peta&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Cabin&family=DM+Sans:opsz@9..40&family=Eczar&family=Lexend+Peta:wght@300;400&family=Lora:wght@500&family=Martel:wght@300;400;600;700&family=Nunito+Sans:opsz,wght@6..12,300&family=Patua+One&family=Prata&family=REM:ital,wght@1,200&family=Raleway:wght@600&family=Stoke&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Lexend+Exa:wght@300&family=Lexend+Peta:wght@300;400&display=swap" rel="stylesheet">
+<style>
+      * {
+      margin: 0
+    }
+
+    .menu {
+      background-image: url("fundo menu.png");
+      background-size: cover;
+      background-position: center;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: black;
+    }
+
+    .logo {
+      justify-content: flex-start;
+      margin-left: 70px;
+    }
+
+    .itens li {
+      list-style-type: none;
+      display: inline-block;
+      justify-content: center;
+      padding-right: 30px;
+      font-size: 22px;
+      margin-right: 30px;
+      font-family: 'DM Sans', sans-serif;
+      font-family: 'Eczar', serif;
+      font-family: 'Lora', serif;
+      font-family: 'Martel', serif;
+      font-family: 'Nunito Sans', sans-serif;
+      font-family: 'Patua One', cursive;
+      font-family: 'Prata', serif;
+      font-family: 'Raleway', sans-serif;
+      font-family: 'REM', sans-serif;
+      font-family: 'Stoke', serif;
+    }
+
+    .itens li:hover {
+      font-size: 27px;
+      transition: 1s;
+    }
+
+    .Contato li {
+      list-style-type: none;
+      display: inline-block;
+      justify-content: flex-end;
+      margin-right: 90px;
+      text-decoration: none;
+      font-size: 25px;
+      font-family: 'DM Sans', sans-serif;
+      font-family: 'Eczar', serif;
+      font-family: 'Lora', serif;
+      font-family: 'Martel', serif;
+      font-family: 'Nunito Sans', sans-serif;
+      font-family: 'Patua One', cursive;
+      font-family: 'Prata', serif;
+      font-family: 'Raleway', sans-serif;
+      font-family: 'REM', sans-serif;
+      font-family: 'Stoke', serif;
+    }
+    .Costal-bot a{
+      text-decoration: none;
+      color: black;
+    }
+    .objetivos a{
+      text-decoration: none;
+      color: black;
+    }
+    .sobre a{
+        text-decoration: none;
+        color: black;
+    }
+    .Contato li:hover {
+      background-color: #F04F1A;
+      transition: 1s;
+    }
+
+    .dropdown ul,
+    li {
+      font-size: 25px;
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      box-shadow: 0 0 2px black;
+      display: none;
+    }
+
+    .dropdown-menu a {
+      display: block;
+      text-decoration: none;
+      color: black;
+      margin-top: 10px;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .instagram {
+      border: 3px solid #EBE7AE;
+      margin-bottom: 5px;
+    }
+
+    .instagram a:hover {
+      background-color: #F04F1A;
+      color: white;
+      transition: background-color 1s, color .4s;
+    }
+
+    .whatsApp {
+      border: 3px solid #EBE7AE;
+      margin-bottom: 5px;
+    }
+
+    .whatsApp a:hover {
+      background-color: #F04F1A;
+      color: white;
+      transition: background-color 1s, color .4s;
+    }
+
+    .facebook {
+      border: 3px solid #EBE7AE;
+    }
+
+    .facebook a:hover {
+      background-color: #F04F1A;
+      color: white;
+      transition: background-color 1s, color .4s;
+    }
+    .introduçao{
+      text-align: center;
+    }
+    .introduçao h1{
+      text-align: center;
+      font-family: 'Arimo', sans-serif;
+      font-family: 'Lexend Exa', sans-serif;
+      font-family: 'Lexend Peta', sans-serif;
+      margin-top: 15px;
+      font-size: 47px;
+    }
+    .introduçao h2{
+      font-family: 'Arimo', sans-serif;
+font-family: 'Cabin', sans-serif;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Eczar', serif;
+font-family: 'Lexend Mega', sans-serif;
+font-family: 'Lexend Peta', sans-serif;
+font-family: 'Lexend Zetta', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Martel', serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Patua One', cursive;
+font-family: 'Prata', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'REM', sans-serif;
+font-family: 'Stoke', serif;
+margin-top: 30px;
+font-size: 33px;
+    }
+    .sobre1{
+      margin-top: 110px;
+    }
+    .sobre1 h2{
+      font-size: 32px;
+      text-align: center;
+      font-family: 'Arimo', sans-serif;
+      font-family: 'Lexend Exa', sans-serif;
+      font-family: 'Lexend Peta', sans-serif;
+    }
+    .sobre1 h2:hover{
+      font-size: 36px;
+      background-color: #2CD6D4;
+      transition: 1s;
+    }
+    .sobre1 h3{
+      font-size: 22px;
+      font-family: 'Arimo', sans-serif;
+font-family: 'Cabin', sans-serif;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Eczar', serif;
+font-family: 'Lexend Mega', sans-serif;
+font-family: 'Lexend Peta', sans-serif;
+font-family: 'Lexend Zetta', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Martel', serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Patua One', cursive;
+font-family: 'Prata', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'REM', sans-serif;
+font-family: 'Stoke', serif;
+margin-top: 45px;
+text-align: center;
+    }
+    .sobre1 h3:hover{
+      font-size: 25px;
+      color:#F04F1A;
+      transition: 1s;
+    }
+    .imagem{
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    .sobre1 p{
+      text-align: center;
+      font-size: 17px;
+      font-family: 'Arimo', sans-serif;
+      font-family: 'Lexend Exa', sans-serif;
+      font-family: 'Lexend Peta', sans-serif;
+      margin-top: 5px;
+    }
+    .historia{
+      margin-top: 110px;
+    }
+    .historia h2{
+      font-size: 32px;
+      text-align: center;
+      font-family: 'Arimo', sans-serif;
+      font-family: 'Lexend Exa', sans-serif;
+      font-family: 'Lexend Peta', sans-serif;
+    }
+    .historia h2:hover{
+      font-size: 36px;
+      background-color: #2CD6D4;
+      transition: 1s;
+    }
+    .historia h3{
+      font-size: 22px;
+      font-family: 'Arimo', sans-serif;
+font-family: 'Cabin', sans-serif;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Eczar', serif;
+font-family: 'Lexend Mega', sans-serif;
+font-family: 'Lexend Peta', sans-serif;
+font-family: 'Lexend Zetta', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Martel', serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Patua One', cursive;
+font-family: 'Prata', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'REM', sans-serif;
+font-family: 'Stoke', serif;
+margin-top: 45px;
+text-align: center;
+    }
+    .historia h3:hover{
+      font-size: 24px;
+      color:#F04F1A;
+      transition: 1s;
+    }
+    .imagem1{
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    .localizaçao{
+      margin-top: 110px;
+    }
+    .localizaçao  h2{
+      font-size: 29px;
+      text-align: center;
+      font-family: 'Arimo', sans-serif;
+      font-family: 'Lexend Exa', sans-serif;
+      font-family: 'Lexend Peta', sans-serif;
+    }
+    .localizaçao h2:hover{
+      font-size: 32px;
+      background-color: #2CD6D4;
+      transition: 1s;
+    }
+    .localizaçao h3{
+      font-size: 19px;
+      font-family: 'Arimo', sans-serif;
+font-family: 'Cabin', sans-serif;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Eczar', serif;
+font-family: 'Lexend Mega', sans-serif;
+font-family: 'Lexend Peta', sans-serif;
+font-family: 'Lexend Zetta', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Martel', serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Patua One', cursive;
+font-family: 'Prata', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'REM', sans-serif;
+font-family: 'Stoke', serif;
+margin-top: 45px;
+text-align: center;
+    }
+    .localizaçao h3:hover{
+      font-size: 22px;
+      color:#F04F1A;
+      transition: 1s;
+    }
+    .mapa{
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    .rodape {
+      height: 150px;
+      background-image: url("fundo menu.png");
+      background-size: cover;
+      background-position: center;
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .texto-final{
+      justify-content: flex-start;
+    }
+    .texto-final h1{
+      font-family: 'Arimo', sans-serif;
+      font-family: 'Arimo', sans-serif;
+      font-family: 'Lexend Exa', sans-serif;
+      font-family: 'Lexend Peta', sans-serif;
+      color: #fff;
+    }
+    .texto-final h2{
+      font-family: 'Arimo', sans-serif;
+      font-family: 'Lexend Exa', sans-serif;
+      font-family: 'Lexend Peta', sans-serif;
+      color: #fff;
+    }  
+    .contato-final{
+      justify-content: flex-end;
+    }
+    .contato-final li{
+      list-style-type: none;
+      display: inline-block;
+      padding-left: 25px;
+    }
+    .contato-final img:hover{
+      height: 50px;
+      width: 50px;
+    }
+</style>
+</head>
+<body>
+    <div class="menu">
+        <div class="logo">
+          <img src="logo pesq.png" width="250" height="250">
+    
+        </div>
+        <div class="itens">
+          <ul>
+            <li class="sobre"><a href="sobre.html"> Sobre </a> </li>
+            <li class="objetivos"><a href="objetivos.html"> Objetivo </a> </li>
+            <li class="Costal-bot"><a href="COSTAL BOT.html"> Coastal Bot</a> </li>
+          </ul>
+        </div>
+        <div class="Contato">
+          <ul>
+            <li class="dropdown"> Contato
+              <div class="dropdown-menu">
+                <div class="instagram">
+                  <a href="https://www.instagram.com/coastalcareofc/"> <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
+                      width="40" height="40"> Instagram </a>
+                </div>
+                <div class="whatsApp">
+                  <a href="https://web.whatsapp.com"> <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1022px-WhatsApp.svg.png"
+                      width="40" height="40"> Whatsapp</a>
+                </div>
+                <div class="facebook">
+                  <a href="https://www.facebook.com/?locale=pt_BR"> <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png"
+                      width="40" height="40"> Facebook</a>
+                      </div>
+                      </div>
+                      </li>
+                      </ul>
+                      </div>
+                      </div>
+        <div class="introduçao">
+          <h1> Mais você sabe tudo sobre nós ?</h1>
+          <h2> Venha conhecer um pouco mais sobre a coastal care</h2>
+        </div>
+        <div class="sobre1">
+          <div class="pergunta">
+            <h2> Quem somos ? </h2>
+          </div>
+          <div class="resposta">
+            <h3> Somos uma empresa que busca conservar e melhorar as áreas litorâneas brasileiras <br>
+               e consequentemente,preservar as espécies  marinhas e visando preservar o nosso planeta</h3>
+          <div class="imagem">
+            <img src="https://www.hypeness.com.br/1/2019/12/santos-700.jpg" height="350" width="650">
+            
+          </div>
+          <p> <b>Praia de Ubatuba (Litoral norte)</b></p>
+          </div>
+        </div>
+        <div class="historia">
+          <div class="titulo">
+            <h2> Um pouco de nosso surgimento</h2>
+          </div>
+          <div class="resposta1">
+            <h3> Está ideia surgiu ao observarmos a quantidade de resíduos de lixos nas praias  e em áreas inadequadas, no <br>
+               qual prejudicam os animais presentes no litoral.Assim,criamos o Coastal Bot com a finalidade de combater e superar este problema</h3>
+          </div>
+          <div class="imagem1">
+            <img src="capa coastal care.png"height="380"width="650">
+          </div>
+        </div>
+        <div class="localizaçao">
+          <div class="escrita">
+            <h2> Nossa sede</h2>
+          </div>
+          <div class="resposta2">
+            <h3> Nossa sede se encontra no bairro de <b> Botafogo (RJ)</b></h3>
+          </div>
+          <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14695.893585059453!2d-43.19597824416611!3d-22.9512068661927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997fe5efee9a25%3A0x3c77ca60168b5ea!2sBotafogo%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1697661589950!5m2!1spt-BR!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="rodape">
+          <div class="logo-final">
+            <img src="logo pesq.png" width="250" height="250">
+        </div>
+          <div class="texto-final">
+            <h1> Coastal care</h1> <br>
+            <h2> Sempre em busaca do melhor para você! </h2>
+        </div>
+         <div class="contato-final">
+         <ul>
+              <li> <a href="https://www.instagram.com/coastalcareofc/"> <img src="https://galeria.ufsc.br/d/218117-1/instagram+3.png"width="30" height="30">  
+                 </li>
+              <li> <a href="https://www.facebook.com/?locale=pt_BR"> <img src="https://cdn-icons-png.flaticon.com/512/4701/4701482.png"width="30" height="30"> 
+                 </li>   
+              <li> <a href="https://web.whatsapp.com"> <img src="https://cdn-icons-png.flaticon.com/512/2582/2582600.png"width="30" height="30">
+                 </li>
+        </div>        
+         </ul>
+        </div>
+        
+</body>
+</html>

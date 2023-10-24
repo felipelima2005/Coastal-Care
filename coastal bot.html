@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Coastal Bot </title>
+  <link rel="icon" type="image/x-icon" href="logo pesq com fundo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Eczar&family=Lora:wght@500&family=Martel:wght@300;400;600;700&family=Nunito+Sans:opsz,wght@6..12,300&family=Patua+One&family=Prata&family=REM:ital,wght@1,200&family=Raleway:wght@600&family=Stoke&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arimo&family=Cabin&family=DM+Sans:opsz@9..40&family=Eczar&family=Lora:wght@500&family=Martel:wght@300;400;600;700&family=Nunito+Sans:opsz,wght@6..12,300&family=Patua+One&family=Prata&family=REM:ital,wght@1,200&family=Raleway:wght@600&family=Stoke&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@300&family=Lexend+Peta&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo&family=Cabin&family=DM+Sans:opsz@9..40&family=Eczar&family=Lexend+Mega&family=Lexend+Peta&family=Lexend+Zetta&family=Lora:wght@500&family=Martel:wght@300;400;600;700&family=Nunito+Sans:opsz,wght@6..12,300&family=Patua+One&family=Prata&family=REM:ital,wght@1,200&family=Raleway:wght@600&family=Stoke&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo&family=Lexend+Exa:wght@300&family=Lexend+Peta:wght@300;400&display=swap" rel="stylesheet">
+   <style>
+        * {
+      margin: 0
+    }
+
+    .menu {
+      background-image: url("fundo menu.png");
+      background-size: cover;
+      background-position: center;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: black;
+    }
+
+    .logo {
+      justify-content: flex-start;
+      margin-left: 70px;
+    }
+
+    .itens li {
+      list-style-type: none;
+      display: inline-block;
+      justify-content: center;
+      padding-right: 30px;
+      font-size: 22px;
+      margin-right: 30px;
+      font-family: 'DM Sans', sans-serif;
+      font-family: 'Eczar', serif;
+      font-family: 'Lora', serif;
+      font-family: 'Martel', serif;
+      font-family: 'Nunito Sans', sans-serif;
+      font-family: 'Patua One', cursive;
+      font-family: 'Prata', serif;
+      font-family: 'Raleway', sans-serif;
+      font-family: 'REM', sans-serif;
+      font-family: 'Stoke', serif;
+    }
+
+    .itens li:hover {
+      font-size: 27px;
+      transition: 1s;
+    }
+
+    .Contato li {
+      list-style-type: none;
+      display: inline-block;
+      justify-content: flex-end;
+      margin-right: 90px;
+      text-decoration: none;
+      font-size: 25px;
+      font-family: 'DM Sans', sans-serif;
+      font-family: 'Eczar', serif;
+      font-family: 'Lora', serif;
+      font-family: 'Martel', serif;
+      font-family: 'Nunito Sans', sans-serif;
+      font-family: 'Patua One', cursive;
+      font-family: 'Prata', serif;
+      font-family: 'Raleway', sans-serif;
+      font-family: 'REM', sans-serif;
+      font-family: 'Stoke', serif;
+    }
+    .Costal-bot a{
+      text-decoration: none;
+      color: black;
+    }
+    .objetivos a {
+      text-decoration: none;
+      color: black;
+    }
+    .sobre a{
+        text-decoration: none;
+        color: black;
+    }
+    .Contato li:hover {
+      background-color: #F04F1A;
+      transition: 1s;
+    }
+
+    .dropdown ul,
+    li {
+      font-size: 25px;
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      box-shadow: 0 0 2px black;
+      display: none;
+    }
+
+    .dropdown-menu a {
+      display: block;
+      text-decoration: none;
+      color: black;
+      margin-top: 10px;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .instagram {
+      border: 3px solid #EBE7AE;
+      margin-bottom: 5px;
+    }
+
+    .instagram a:hover {
+      background-color: #F04F1A;
+      color: white;
+      transition: background-color 1s, color .4s;
+    }
+
+    .whatsApp {
+      border: 3px solid #EBE7AE;
+      margin-bottom: 5px;
+    }
+
+    .whatsApp a:hover {
+      background-color: #F04F1A;
+      color: white;
+      transition: background-color 1s, color .4s;
+    }
+
+    .facebook {
+      border: 3px solid #EBE7AE;
+    }
+
+    .facebook a:hover {
+      background-color: #F04F1A;
+      color: white;
+      transition: background-color 1s, color .4s;
+    }
+    .costal-bot h1{
+      font-size: 47px;
+      text-align: center;
+      font-family: 'Arimo', sans-serif;
+      font-family: 'Lexend Exa', sans-serif;
+      font-family: 'Lexend Peta', sans-serif;
+      margin-top: 5px;
+    }
+    .costal-bot h2{
+      font-size: 25px;
+      text-align: center;
+      font-family: 'Arimo', sans-serif;
+font-family: 'Cabin', sans-serif;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Eczar', serif;
+font-family: 'Lexend Mega', sans-serif;
+font-family: 'Lexend Peta', sans-serif;
+font-family: 'Lexend Zetta', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Martel', serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Patua One', cursive;
+font-family: 'Prata', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'REM', sans-serif;
+font-family: 'Stoke', serif;
+    }
+    .costal-bot h4{
+        text-align: center;
+        font-size: 19px;
+        font-family: 'Cabin', sans-serif;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Eczar', serif;
+font-family: 'Lexend Mega', sans-serif;
+font-family: 'Lexend Peta', sans-serif;
+font-family: 'Lexend Zetta', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Martel', serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Patua One', cursive;
+font-family: 'Prata', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'REM', sans-serif;
+font-family: 'Stoke', serif;
+    }
+    .pergunta1{
+      text-align: center;
+    }
+    .pergunta1 h2{
+      font-family: 'Cabin', sans-serif;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Eczar', serif;
+font-family: 'Lexend Mega', sans-serif;
+font-family: 'Lexend Peta', sans-serif;
+font-family: 'Lexend Zetta', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Martel', serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Patua One', cursive;
+font-family: 'Prata', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'REM', sans-serif;
+font-family: 'Stoke', serif;
+font-size: 30px;
+    }
+    .pergunta1 h2:hover{
+      color: #F04F1A;
+      font-size: 32px;
+      transition: 1s;
+    }
+   .resposta1{
+      display: flex;
+      justify-content: center;
+      margin-top: 25px;
+      margin-left: 40px;
+   }
+   .resposta1 h3{
+    font-family: 'Cabin', sans-serif;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Eczar', serif;
+font-family: 'Lexend Mega', sans-serif;
+font-family: 'Lexend Peta', sans-serif;
+font-family: 'Lexend Zetta', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Martel', serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Patua One', cursive;
+font-family: 'Prata', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'REM', sans-serif;
+font-family: 'Stoke', serif;
+font-size: 20px;
+   }
+   .resposta1 h3:hover{
+    background-color: #2CD6D4;
+    font-size: 22px;
+    transition: 1s;
+   }
+   .pergunta2{
+      text-align: center;
+      margin-top: 110px;
+   }
+   
+   .pergunta2 h2{
+    font-family: 'Cabin', sans-serif;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Eczar', serif;
+font-family: 'Lexend Mega', sans-serif;
+font-family: 'Lexend Peta', sans-serif;
+font-family: 'Lexend Zetta', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Martel', serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Patua One', cursive;
+font-family: 'Prata', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'REM', sans-serif;
+font-family: 'Stoke', serif;
+font-size: 30px;
+   }
+   .pergunta2 h2:hover{
+      color: #F04F1A;
+      font-size: 32px;
+      transition: 1s;
+    }
+   .resposta2 {
+      margin-top: 40px;
+      margin-left: 40px;
+   } 
+   .resposta2 h3{
+    display: flex;
+      justify-content: center;
+    font-family: 'Cabin', sans-serif;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Eczar', serif;
+font-family: 'Lexend Mega', sans-serif;
+font-family: 'Lexend Peta', sans-serif;
+font-family: 'Lexend Zetta', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Martel', serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Patua One', cursive;
+font-family: 'Prata', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'REM', sans-serif;
+font-family: 'Stoke', serif;
+font-size: 25px;
+margin-bottom: 20px;
+   }
+   .resposta2 li{
+    display: flex;
+    justify-content: center;
+    font-family: 'Cabin', sans-serif;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Eczar', serif;
+font-family: 'Lexend Mega', sans-serif;
+font-family: 'Lexend Peta', sans-serif;
+font-family: 'Lexend Zetta', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Martel', serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Patua One', cursive;
+font-family: 'Prata', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'REM', sans-serif;
+font-family: 'Stoke', serif;
+font-size: 20px;
+margin-top: 10px;
+
+   }
+   .resposta2 li:hover{
+    background-color: #2CD6D4;
+    font-size: 22px;
+   }
+   .pergunta3{
+      text-align: center;
+      margin-top: 110px;
+   }
+   .pergunta3 h2{
+    font-family: 'Cabin', sans-serif;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Eczar', serif;
+font-family: 'Lexend Mega', sans-serif;
+font-family: 'Lexend Peta', sans-serif;
+font-family: 'Lexend Zetta', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Martel', serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Patua One', cursive;
+font-family: 'Prata', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'REM', sans-serif;
+font-family: 'Stoke', serif;
+font-size: 30px;
+   }
+   .pergunta3 h2:hover{
+      color: #F04F1A;
+      font-size: 32px;
+      transition: 1s;
+   }
+   .resposta3{
+      margin-top: 40px
+   }
+   .resposta3  li{
+    font-family: 'Cabin', sans-serif;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Eczar', serif;
+font-family: 'Lexend Mega', sans-serif;
+font-family: 'Lexend Peta', sans-serif;
+font-family: 'Lexend Zetta', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Martel', serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Patua One', cursive;
+font-family: 'Prata', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'REM', sans-serif;
+font-family: 'Stoke', serif;
+font-size: 20px;
+display: flex;
+justify-content: center;
+   }
+   .resposta3 li:hover{
+    background-color: #2CD6D4;
+    font-size: 22px;
+   }
+   .rodape {
+      height: 150px;
+      background-image: url("fundo menu.png");
+      background-size: cover;
+      background-position: center;
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .texto-final{
+      justify-content: flex-start;
+    }
+    .texto-final h1{
+      font-family: 'Arimo', sans-serif;
+      font-family: 'Arimo', sans-serif;
+      font-family: 'Lexend Exa', sans-serif;
+      font-family: 'Lexend Peta', sans-serif;
+      color: #fff;
+    }
+    .texto-final h2{
+      font-family: 'Arimo', sans-serif;
+      font-family: 'Lexend Exa', sans-serif;
+      font-family: 'Lexend Peta', sans-serif;
+      color: #fff;
+    }  
+    .contato-final{
+      justify-content: flex-end;
+    }
+    .contato-final li{
+      list-style-type: none;
+      display: inline-block;
+      padding-left: 25px;
+    }
+    .contato-final img:hover{
+      height: 50px;
+      width: 50px;
+    }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="logo">
+          <img src="logo pesq.png" width="250" height="250">
+        </div>
+        <div class="itens">
+          <ul>
+            <li class="sobre"><a href="sobre.html"> Sobre </a> </li>
+            <li class="objetivos"><a href="objetivos.html"> Objetivo </a> </li>
+            <li class="Costal-bot"><a href="COSTAL BOT.html"> Coastal Bot</a> </li>
+          </ul>
+        </div>
+        <div class="Contato">
+          <ul>
+            <li class="dropdown"> Contato
+              <div class="dropdown-menu">
+                <div class="instagram">
+                  <a href="https://www.instagram.com/coastalcareofc/"> <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
+                      width="40" height="40"> Instagram </a>
+                </div>
+                <div class="whatsApp">
+                  <a href="https://web.whatsapp.com"> <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1022px-WhatsApp.svg.png"
+                      width="40" height="40"> Whatsapp</a>
+                </div>
+                <div class="facebook">
+                  <a href="https://www.facebook.com/?locale=pt_BR"> <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png"
+                      width="40" height="40"> Facebook</a> 
+                </div>
+                </div>
+            </li>
+              </div>
+            </div>
+            <div class="costal-bot">
+                <h1> Coastal Bot </h1> <br> <br>
+                <h2> projeto feito pela Costal Care para melhorar futuro das praias e da vida marinha </h2> <br> <br>
+                <h4> nós da Costal Care viemos observando ao longo dos anos que as <br>
+                     poluições nas praias é um caso que só vem aumentando <br>
+                     com o tempo, e isso ajuda na ampliação da desvastação na vida marinha, <br>
+                     mais estamos aqui para mudar isto com nosso novo projeto o Costal Bot!</h4> <br> <br> <br> <br>
+            <div class="pergunta1">
+                <h2>  Mais o que é o Coastal Bot ? </h2> <br> <br>
+            </div>
+            <div class="resposta1">
+                <h3> O robô se chama Coastal Bot contará com recursos avançados de identificação e reconhecimento visual, permitindo a detecção <br>
+                   e o recolhimento eficiente de diferentes tipos de objetos. Através de algoritmos inteligentes e sensores integrados, <br>
+                    o aparelho será capaz de navegar no ambiente de forma autônoma, evitando obstáculos e realizando a coleta de maneira precisa.</h3> <br> <br>
+                  </div>
+            <div class="pergunta2">
+              <h2> Mais o Coastal Bot é muito caro ?</h2> 
+            </div>
+            <div class="resposta2">
+              <h3> O Costal Bot conta com: </h3>
+              <ul>
+                <li> 1- Esp 8266- valor R$34,00</li>
+                <li> 1- Chassi 2wd- valor R$50,00</li>
+                <li> 1- Ponte H- valor R$20,00</li>
+                <li> 1- Mini protoboard 170 pts- valor R$5,00</li>
+                <li> 4- Sensor distancia ultrassonico HCSR04- valor R$18,00 </li>
+                <li> 1- Botão liga/desliga quadro chave-gangorra- valor R$ 9,00 </li>
+                <li> 7- Jumper 20cm (femea-macho)- valor R$0,50 </li>
+                <li> 15- Jumper 20cm (macho-macho)- valor R$0,47 </li>
+                <li> 1- Bateria v9- valor R$ 12,00</li>
+                <li> 8- Abraçadeira de nylon 15cm- valor R$ 0,05 </li>
+                <li> 1- Fita dupla face- valor R$20,00 </li>
+                <li> 2- Motor CC- valor 48,00</li> <br> <br>
+                <li> <b>VALOR TOTAL: R$ 328,95</b></li>
+              </ul>
+            </div>
+            <div class="pergunta3">
+              <h2> Como utilizar ?</h2>
+            </div>
+            <div class="resposta3">
+              <ul>
+                <li> <b>1- Ser posicionado na praia; </b> </li> <br>
+                <li> <b>2- Ser inicializado;</b> </li> <br>
+                <li> <b>3- Depois de inicializado ser configurado;</b> </li> <br>
+                <li> <b>4- Na configuração informar, a rota, a duração do tempo de funcionamento, os locais de coleta(lixeira);</b> </li> <br>
+                <li> <b>5- Quando der o horário do turno recolhe-lo no local posicionado.</b> </li>
+              </ul>
+            </div>
+             </div>
+             <div class="rodape">
+              <div class="logo-final">
+                <img src="logo pesq.png" width="250" height="250">
+            </div>
+              <div class="texto-final">
+                <h1> Coastal care</h1> <br>
+                <h2> Sempre em busaca do melhor para você! </h2>
+            </div>
+             <div class="contato-final">
+             <ul>
+                  <li> <a href="https://www.instagram.com/coastalcareofc/"> <img src="https://galeria.ufsc.br/d/218117-1/instagram+3.png"width="30" height="30">  
+                     </li>
+                  <li> <a href="https://www.facebook.com/?locale=pt_BR"> <img src="https://cdn-icons-png.flaticon.com/512/4701/4701482.png"width="30" height="30"> 
+                     </li>   
+                  <li> <a href="https://web.whatsapp.com"> <img src="https://cdn-icons-png.flaticon.com/512/2582/2582600.png"width="30" height="30">
+                     </li>
+            </div> 
+
+</body>
+</html>
